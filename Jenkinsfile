@@ -13,7 +13,7 @@ pipeline {
       }
       stage("Three") {
           steps {
-              echo "Stage three completed!"
+              echo "Deployed at server ${env.SOME_SECRET_IP}. Stage three completed!"
           }
       }
   }
