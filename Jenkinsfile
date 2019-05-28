@@ -16,4 +16,5 @@ pipeline {
               echo "Stage three completed!"
           }
       }
+  }
 }
