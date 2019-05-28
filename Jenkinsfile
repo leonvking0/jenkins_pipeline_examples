@@ -19,5 +19,10 @@ pipeline {
               echo "Deployed at server ${env.SECRET_IP}. Stage three completed!"
           }
       }
+      stage("Four") {
+          steps {
+              echo "Deployed at server $SECRET_IP. Stage four completed!"
+          }
+      }
   }
 }
