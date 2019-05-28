@@ -3,7 +3,7 @@ pipeline {
   stages {
       stage("One") {
           steps {
-              echo "Hi, this is stage one."
+              echo "Hi, this is stage one. We are at build number: ${env.BUILD_NUMBER}"
           }
       }
       stage("Two") {
