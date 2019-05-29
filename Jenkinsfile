@@ -21,7 +21,7 @@ pipeline {
       }
       stage("Four") {
           steps {
-              sh 'curl ${env.SECRET_IP}'
+              sh "curl ${env.SECRET_IP}"
               echo "Deployed at server $SECRET_IP. Stage four completed!"
           }
       }
