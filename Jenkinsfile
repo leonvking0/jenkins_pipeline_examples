@@ -16,13 +16,13 @@ pipeline {
       }
       stage("Three") {
           steps {
-              echo "Deployed at server ${env.SECRET_IP}. Stage three completed!"
+              echo "This is a credential  ${env.SECRET_IP}. You cannot see it"
+              sh "curl ${env.SECRET_IP}"
           }
       }
       stage("Four") {
           steps {
-              sh "curl ${env.SECRET_IP}"
-              echo "Deployed at server $SECRET_IP. Stage four completed!"
+              echo "This is a job parameter $SOME_PAR. Stage four completed!"
           }
       }
   }
